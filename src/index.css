@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap');
+
+:root {
+  font-family: 'Noto Serif JP', serif;
+  --bgPrimary:#343C40;
+  --bgSecondary: #2A3033;
+  --bgTertiary: #222629;
+  --darkBlue: #03001c;
+  --lightBlue: #001c36;
+
+  color: rgba(255, 255, 255, 0.87);
+  background-color: var(--bgPrimary);
+  
+  /* 
+  GALAXY STYLE
+  #2A3033 - dark 
+  #343C40 - dark
+  #2D383A - dark
+  #060D12 - dark blue
+  #010B13 - rich black
+  #141414 - brown black
+
+  CRYSTAL STYLE
+  #972684 - purple
+  #94CEFF - cyan
+  #FF4DA1 - pink
+  */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  background-image: url("../src/assets/star-background.jpg");
+}
