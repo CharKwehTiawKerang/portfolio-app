@@ -1,10 +1,10 @@
-.animation-icon-wrapper{
+.animation-icon-wrapper {
     max-width: 70px;
     max-height: 70px;
     margin: 0.3rem 0.1rem 0rem 0.1rem;
 }
 
-.navlink-wrapper a:hover{
+.navlink-wrapper a:hover {
     background-color: var(--lightBlue);
     animation: navOpacity 0.4s;
     animation-timing-function: linear;
@@ -15,6 +15,6 @@
     to {opacity: 1;}
 }
 
-.navlink-wrapper a.active{
+.navlink-wrapper a.active {
     background-color: var(--lightBlue);
 }

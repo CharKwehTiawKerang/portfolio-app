@@ -38,5 +38,5 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
-  background-image: url("../src/assets/star-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.9)), url("../src/assets/star-background.jpg");
 }

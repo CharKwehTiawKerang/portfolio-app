@@ -7,6 +7,11 @@
   display: flex;
 }
 
+.sub-title {
+  font-size: 24px;
+  border-bottom: 2px solid white;
+}
+
 /* NAVBAR */
 .navbar-wrapper {
   height: 100%;
@@ -33,7 +38,7 @@
   margin: 0 0 auto 0;
 }
 
-.navlink-wrapper a{
+.navlink-wrapper a {
   color: white;
   font-size: 18px;
   text-decoration: none;
@@ -43,13 +48,13 @@
   align-items: center;
 }
 
-.footer-wrapper{
+.footer-wrapper {
   width: 260px;
   line-height: 0.8rem;
   padding: 0 1rem;
 }
 
-.heart{
+.heart {
   color: red;
 }
 
@@ -77,22 +82,30 @@
   margin: 0 1.6rem;
 } */
 
-/* HOME */
-.home-wrapper, .work-wrapper, .about-wrapper, .contact-wrapper{
+
+.home-wrapper {
   width: 100vw;
   padding: 4rem;
   color: rgba(255, 255, 255, 1);
 }
 
-.hero-section-wrapper div{
+.work-wrapper, .about-wrapper, .contact-wrapper {
+  width: 100vw;
+  padding: 4rem;
+  color: rgba(255, 255, 255, 1);
+}
+
+
+/* HOME */
+.hero-section-wrapper div {
   display: flex;
 }
 
-.main-image{
+.main-image {
   width: 250px;
 }
 
-.hero-title{
+.hero-title {
   display: flex;
   justify-content: center;
   padding-left: 2rem;
@@ -100,7 +113,7 @@
   font-size: 42px;
 }
 
-.hero-description{
+.hero-description {
   margin-top: 2rem;
   font-size: 20px;
   line-height: 2.1rem;
@@ -108,19 +121,38 @@
 }
 
 /* WORK */
-.projects-wrapper, .frameworks-wrapper, .tools-wrapper, .profile-wrapper, .future-dream-wrapper, .contact-wrapper{
+.projects-wrapper, .frameworks-wrapper, .tools-wrapper, .profile-wrapper, .future-dream-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.projects-title, .frameworks-title, .tools-title, .profile-title, .future-dream-title, .contact-title{
+.projects-title, .frameworks-title, .tools-title, .profile-title, .future-dream-title, .contact-title {
   text-transform: uppercase;
   font-size: 32px;
 }
 
-.coming-soon{
+.coming-soon {
   width: 250px;
   margin-bottom: 3rem;
+}
+
+/* WORK */
+.contact-title {
+  text-align: center;
+}
+
+.get-in-touch-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.info-title, .socmed-title {
+  text-align: center;
+}
+
+.socmed-section-wrapper {
+  display: flex;
+  flex-direction: column;
 }

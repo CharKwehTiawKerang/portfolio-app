@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
 
 import  { Navbar, Home, Work, About, Contact } from './components'
@@ -6,8 +5,6 @@ import './App.css'
 import './animation.css'
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
     <>
       <Navbar />
