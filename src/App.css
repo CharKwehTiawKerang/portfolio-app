@@ -9,6 +9,7 @@
 
 .sub-title {
   font-size: 24px;
+  padding-bottom: 8px;
   border-bottom: 2px solid white;
 }
 
@@ -152,7 +153,22 @@
   text-align: center;
 }
 
+.socmed-section-wrapper, .info-section-wrapper {
+  min-width: 300px;
+}
+
 .socmed-section-wrapper {
   display: flex;
   flex-direction: column;
+  gap: 0.6em;
+}
+
+.socmed-section-wrapper a {
+  color: white; /* will change later */
+  text-decoration: none;
+}
+
+.socmed-section-wrapper a:hover{
+  color: cyan; /* will change later */
+  text-decoration: none;
 }
