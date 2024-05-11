@@ -7,6 +7,8 @@
   --bgTertiary: #222629;
   --darkBlue: #03001c;
   --lightBlue: #001c36;
+  --purple: #972684;
+  --cyan: #94CEFF;
 
   color: rgba(255, 255, 255, 0.87);
   background-color: var(--bgPrimary);

@@ -163,12 +163,62 @@
   gap: 0.6em;
 }
 
-.socmed-section-wrapper a {
-  color: white; /* will change later */
+.info-section-wrapper .info p, .socmed-section-wrapper a {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  line-height: 2em;
+}
+
+.info-section-wrapper p img, .socmed-section-wrapper a img {
+  width: 24px;
+  height: auto;
+}
+
+#phone {
+  color: #797979;
   text-decoration: none;
 }
 
-.socmed-section-wrapper a:hover{
-  color: cyan; /* will change later */
+#gmail {
+  color: var(--purple);
   text-decoration: none;
+}
+
+#googlemaps {
+  color: var(--cyan);
+  text-decoration: none;
+}
+
+#whatsapp {
+  color: #25D366;
+  text-decoration: none;
+}
+
+#github {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#instagram {
+  color: #E4405F;
+  text-decoration: none;
+}
+
+#whatsapp:hover {
+  color: #25D366;
+  text-decoration: none;
+  text-shadow: 0px 0px 16px #00ff5e;
+}
+
+#github:hover {
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 0px 0px 16px #ffffff;
+}
+
+#instagram:hover {
+  color: #E4405F;
+  text-decoration: none;
+  text-shadow: 0px 0px 16px #ff002f;
 }
