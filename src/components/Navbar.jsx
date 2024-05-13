@@ -133,14 +133,22 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="navlink-wrapper">
-          <NavLink to='/' id='home-hover-animation'><span className='animation-icon-wrapper' id='home'></span>Home</NavLink>
-          <NavLink to='/work' id='gear-hover-animation'><span className='animation-icon-wrapper' id='gear'></span>Work</NavLink>
-          <NavLink to='/about' id='hourglass-hover-animation'><span className='animation-icon-wrapper' id='hourglass'></span>About</NavLink>
-          <NavLink to='/contact' id='bulb-hover-animation'><span className='animation-icon-wrapper' id='bulb'></span>Contact</NavLink>
+          <Fade left delay={200}>
+            <NavLink to='/' id='home-hover-animation'><span className='animation-icon-wrapper' id='home'></span>Home</NavLink>
+          </Fade>
+          <Fade left delay={400}>
+            <NavLink to='/work' id='gear-hover-animation'><span className='animation-icon-wrapper' id='gear'></span>Work</NavLink>
+          </Fade>
+          <Fade left delay={600}>
+            <NavLink to='/about' id='hourglass-hover-animation'><span className='animation-icon-wrapper' id='hourglass'></span>About</NavLink>
+          </Fade>
+          <Fade left delay={800}>
+            <NavLink to='/contact' id='bulb-hover-animation'><span className='animation-icon-wrapper' id='bulb'></span>Contact</NavLink>
+          </Fade>
         </div>
 
         <div className='footer-wrapper'>
-          <p>Made with <span className='heart'>♥</span>.</p>
+          <p>Made with <span className='heart'>💖</span>.</p>
           <p>Designed by Hariz Asyraf ㇐ 2024.</p>
         </div>
     </div>

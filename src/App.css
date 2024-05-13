@@ -94,7 +94,7 @@
 
 .work-wrapper, .about-wrapper, .contact-wrapper {
   width: 100vw;
-  padding: 4rem;
+  padding: 2rem;
   color: rgba(255, 255, 255, 1);
 }
 
@@ -148,38 +148,61 @@
   text-align: center;
 }
 
-form.ant-form {
+.contact-subtitle {
+  width: 40vw;
+  height: auto;
+  margin: auto;
+  margin-top: 1em !important;
+  font-size: 1.6em;
+  color: var(--cyan);
+}
+
+form.ant-form, .form-contact {
   width: 40vw !important;
   height: auto !important;
   overflow-y: hidden !important;
   display: flex !important;
   flex-direction: column;
   margin: auto !important;
-  margin-top: 2em !important;
+  margin-top: 0.6em !important;
   margin-bottom: 2em !important;
+  padding-bottom: 0.5em !important;
 }
 
-label.ant-form-item-required {
+label.ant-form-item-required, label {
   color: #ffffff !important;
   font-weight: bold !important;
-  margin-top: 1em !important;
+  margin-bottom: 0.2em !important;
+  text-transform: uppercase !important;
+}
+
+label span {
+  color: rgb(255, 63, 63);
 }
 
 div.ant-form-item-explain-error {
   font-size: 16px;
-  margin-top: 0.2em !important;
+  margin-top: 0em !important;
+  margin-bottom: 1em !important;
 }
 
-div.ant-form-item-control-input-content input.ant-input, textarea#message {
+div.ant-form-item-control-input-content input.ant-input, textarea#message, .form-contact input, textarea {
   color: #ffffff !important;
   background-color: var(--bgPrimary) !important;
   font-size: 16px !important;
-  padding-top: 8px !important;
-  padding-bottom: 8px !important;
+  padding: 8px !important;
+  margin-bottom: 1em;
+  font-family: 'Noto Serif JP', serif !important;
+  border: 3px solid #555;
 }
 
-div.ant-form-item-control-input-content input::placeholder, textarea#message::placeholder {
+div.ant-form-item-control-input-content input::placeholder, textarea#message::placeholder, .form-contact input::placeholder, textarea::placeholder {
   color: #949494 !important;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border: 3px solid var(--cyan);
 }
 
 button.submit-contact {
@@ -187,7 +210,6 @@ button.submit-contact {
   padding-left: 1.8em;
   padding-right: 1.8em;
   margin-top: 1.5em;
-  margin-left: 2.5em;
   text-align: center !important;
   align-self: center !important;
   justify-content: center !important;
@@ -197,16 +219,14 @@ button.submit-contact {
   border: 2px solid var(--cyan);
   border-radius: 5%;
   cursor: pointer;
+  font-family: 'Noto Serif JP', serif;
+  font-weight: bolder !important;
 }
 
 button.submit-contact:hover {
   background-color: transparent !important;
   border: 2px solid #ffffff;
-  box-shadow: 2px 0px 15px #ffffff;
-}
-
-p.error-submit {
-  color: #ffffff !important;
+  box-shadow: 1px 1px 10px #ffffff;
 }
 
 .get-in-touch-wrapper {

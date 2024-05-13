@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Rotate from 'react-reveal/Rotate';
+import Fade from 'react-reveal/Fade';
 import ContactForm from './ContactForm'
 
 import Phone from '../assets/phone.svg';
@@ -15,25 +15,32 @@ const Contact = () => {
     <>
       <div className='contact-wrapper'>
         <p className='contact-title'>Get in touch with me</p>
-        
-        <ContactForm />
+
+        <Fade right>
+          <ContactForm />
+        </Fade>
 
         <div className="get-in-touch-wrapper">
-          <div className="info-section-wrapper">
-            <p className='info-title sub-title'>Contact Info</p>
-            <div className='info'>
-              <p id='phone'><img src={Phone}/> +6010-302 0168</p>
-              <p id='gmail'><img src={Gmail}/> harizstyles56@gmail.com</p>
-              <p id='googlemaps'><img src={GoogleMaps}/> Kuala Lumpur, Malaysia</p> 
+          <Fade bottom>
+            <div className="info-section-wrapper">
+              <p className='info-title sub-title'>Contact Info</p>
+              <div className='info'>
+                <p id='phone'><img src={Phone}/> +6010-302 0168</p>
+                <p id='gmail'><img src={Gmail}/> harizstyles56@gmail.com</p>
+                <p id='googlemaps'><img src={GoogleMaps}/> Kuala Lumpur, Malaysia</p> 
+              </div>
             </div>
-          </div>
+          </Fade>
 
-          <div className="socmed-section-wrapper">
-            <p className='socmed-title sub-title'>Social Media</p>
-            <Link id='whatsapp' to='https://wa.me/60103020168' target='_blank'><img src={Whatsapp}/> +60 10-302 0168</Link>
-            <Link id='github' to='https://github.com/CharKwehTiawKerang' target='_blank'><img src={GitHub}/> CharKwehTiawKerang</Link>
-            <Link id='instagram' to='https://www.instagram.com/_h_sugi/' target='_blank'><img src={Instagram}/> _h_sugi</Link>
-          </div>
+          <Fade bottom delay={200}>
+            <div className="socmed-section-wrapper">
+              <p className='socmed-title sub-title'>Social Media</p>
+              <Link id='whatsapp' to='https://wa.me/60103020168' target='_blank'><img src={Whatsapp}/> +60 10-302 0168</Link>
+              <Link id='github' to='https://github.com/CharKwehTiawKerang' target='_blank'><img src={GitHub}/> CharKwehTiawKerang</Link>
+              <Link id='instagram' to='https://www.instagram.com/_h_sugi/' target='_blank'><img src={Instagram}/> _h_sugi</Link>
+            </div>
+          </Fade>
+
         </div>
       </div>
     </>
