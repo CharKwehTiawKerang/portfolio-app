@@ -16,9 +16,7 @@ const Contact = () => {
       <div className='contact-wrapper'>
         <p className='contact-title'>Get in touch with me</p>
 
-        <Fade right>
-          <ContactForm />
-        </Fade>
+        <ContactForm />
 
         <div className="get-in-touch-wrapper">
           <Fade bottom>

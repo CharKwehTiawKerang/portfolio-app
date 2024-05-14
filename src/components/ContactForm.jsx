@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import { Form, Input } from 'antd'
+import Fade from 'react-reveal/Fade';
 import emailjs from '@emailjs/browser'
 
 const ContactForm = () => {
@@ -31,22 +32,34 @@ const ContactForm = () => {
       <p className='contact-subtitle'>Send me a message... 📩</p>
 
       <form className='form-contact' ref={form} onSubmit={sendEmail}>
-        <label><span>*</span> Name</label>
-        <input type="text" name="name" placeholder='Your Name' required/>
+        <Fade right>
+          <label><span>*</span> Name</label>
+          <input className='crystal-box-input' type="text" name="name" placeholder='Your Name' required/>
+        </Fade>
 
-        <label><span>*</span> Contact Number</label>
-        <input type="number" name="phone" placeholder='+60' required/>
+        <Fade right delay={200}>
+          <label><span>*</span> Contact Number</label>
+          <input className='crystal-box-input' type="number" name="phone" placeholder='+60' required/>
+        </Fade>
 
-        <label><span>*</span> Email</label>
-        <input type="email" name="email" placeholder='name@company.com' required/>
+        <Fade right delay={300}>
+          <label><span>*</span> Email</label>
+          <input className='crystal-box-input' type="email" name="email" placeholder='name@company.com' required/>
+        </Fade>
 
-        <label><span>*</span> Subject</label>
-        <input type="text" name="subject" placeholder='Title' required/>
+        <Fade right delay={400}>
+          <label><span>*</span> Subject</label>
+          <input className='crystal-box-input' type="text" name="subject" placeholder='Title' required/>
+        </Fade>
 
-        <label><span>*</span> Message</label>
-        <textarea name="message" maxlength="1000" placeholder='Maximum 1000 letters' required/>
+        <Fade right delay={500}>
+          <label><span>*</span> Message</label>
+          <textarea className='crystal-box-input' name="message" maxlength="1000" placeholder='Maximum 1000 letters' required/>
+        </Fade>
 
-        <button className='submit-contact'>SUBMIT</button>
+        <Fade right delay={600}>
+          <button className='submit-contact'>SUBMIT</button>
+        </Fade>
       </form>
 
       {/* <Form id="data" className='contact-form' onFinish={sendEmail} layout='vertical' autoComplete='off'>
