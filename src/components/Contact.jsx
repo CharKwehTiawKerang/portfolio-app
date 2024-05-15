@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 import ContactForm from './ContactForm'
 
 import Phone from '../assets/phone.svg';
-import Gmail from '../assets/gmail.svg';
+import Mailer from '../assets/minutemailer.svg';
 import GoogleMaps from '../assets/googlemaps.svg';
 import Whatsapp from '../assets/whatsapp.svg';
 import GitHub from '../assets/github.svg';
@@ -24,7 +24,7 @@ const Contact = () => {
               <p className='info-title sub-title'>Contact Info</p>
               <div className='info'>
                 <p id='phone'><img src={Phone}/> +6010-302 0168</p>
-                <p id='gmail'><img src={Gmail}/> harizstyles56@gmail.com</p>
+                <p id='gmail'><img src={Mailer}/> harizstyles56@gmail.com</p>
                 <p id='googlemaps'><img src={GoogleMaps}/> Kuala Lumpur, Malaysia</p> 
               </div>
             </div>

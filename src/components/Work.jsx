@@ -8,7 +8,7 @@ const Work = () => {
     <>
       <div className="work-wrapper">
         <div className="projects-wrapper">
-          <p className="projects-title">Projects | Frameworks | Tools</p>
+          <p className="projects-title">Projects <span className='crystal'>|</span> Frameworks <span className='crystal'>|</span> Tools</p>
           <Rotate top left delay={400}>
           <img src={comingsoon} alt="Coming Soon" className='coming-soon'/>
           </Rotate>

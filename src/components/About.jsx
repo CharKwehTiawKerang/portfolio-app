@@ -9,7 +9,7 @@ const About = () => {
       <div className="about-wrapper">
         {/* <p className='about-title'>Get to know me more</p> */}
         <div className="profile-wrapper">
-          <p className='profile-title'>Profile & Future</p>
+          <p className='profile-title'>Profile <span className='crystal'>&</span> Future</p>
           <Rotate top left delay={400}>
           <img src={comingsoon} alt="Coming Soon" className='coming-soon'/>
           </Rotate>
