@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Fade from 'react-reveal/Fade';
+import { Fade } from "react-reveal";
 
 import Image from '../assets/raya-outfit-2024.jpg'
 
@@ -20,8 +20,8 @@ const Home = () => {
                 </div>
 
                 <div className='download-btn-wrapper'>
-                    <button className='crystal-box-input'>R E S U M E</button>
-                    <button className='crystal-box'>C O N T A C T M E</button>
+                    <button className='crystal-box-input'><Link to="/src/assets/resume.pdf" target="_blank" download>R E S U M E</Link></button>
+                    <button className='crystal-box'><Link to='/contact'>C O N T A C T M E</Link></button>
                 </div>
               </div>
             </Fade>
