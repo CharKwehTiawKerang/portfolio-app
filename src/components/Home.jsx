@@ -1,10 +1,25 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { Fade } from "react-reveal";
+import Lottie from 'lottie-web'
 
 import Image from '../assets/raya-outfit-2024.jpg'
+import Hireme from '../animations/hire-me.json'
 
 const Home = () => {
+  const hiremeAnimationContainer = useRef();
+
+  useEffect(() => {
+    const hiremeAnimation = Lottie.loadAnimation({
+      container: hiremeAnimationContainer.current,
+      animationData: Hireme
+    })
+
+    return () => {
+      hiremeAnimation.destroy();
+    }
+  }, [])
+
   return (
     <>
       <div className='home-wrapper'>
@@ -21,7 +36,7 @@ const Home = () => {
 
                 <div className='download-btn-wrapper'>
                     <button className='crystal-box-input'><Link to="/src/assets/resume.pdf" target="_blank" download>R E S U M E</Link></button>
-                    <button className='crystal-box'><Link to='/contact'>C O N T A C T M E</Link></button>
+                    <Link to='/contact' className='animation-button-wrapper' ref={hiremeAnimationContainer}></Link>
                 </div>
               </div>
             </Fade>

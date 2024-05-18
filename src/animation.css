@@ -25,6 +25,11 @@ span.heart:hover {
     cursor: pointer;
 }
 
+/* =================================== HOME  =================================== */
+.animation-button-wrapper {
+    max-width: 200px !important;
+}
+
 /* =================================== CONTACT  =================================== */
 #whatsapp:hover {
     color: #25D366;

@@ -1,10 +1,15 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom';
 import { Form, Input } from 'antd'
 import Fade from 'react-reveal/Fade';
 import emailjs from '@emailjs/browser'
+import Lottie from 'lottie-web'
+
+import SubmitForm from '../animations/submit-form.json'
 
 const ContactForm = () => {
     const form = useRef();
+    const submitFormAnimationContainer = useRef();
 
     const sendEmail = (e) => {
       e.preventDefault();
@@ -25,7 +30,22 @@ const ContactForm = () => {
             );
 
       e.target.reset();
-    }
+    };
+
+    const handleSubmitForm = () => {
+      form.current.requestSubmit(); // Programmatically submit the form
+    };
+
+    useEffect(() => {
+      const submitFormAnimation = Lottie.loadAnimation({
+        container: submitFormAnimationContainer.current,
+        animationData: SubmitForm
+      })
+
+      return () => {
+        submitFormAnimation.destroy();
+      }
+    }, [])
 
   return (
     <>
@@ -54,11 +74,11 @@ const ContactForm = () => {
 
         <Fade right delay={500}>
           <label><span>*</span> Message</label>
-          <textarea className='crystal-box-input' name="message" maxlength="1000" placeholder='Maximum 1000 letters' required/>
+          <textarea className='crystal-box-input' name="message" maxLength="1000" placeholder='Maximum 1000 letters' required/>
         </Fade>
 
         <Fade right delay={600}>
-          <button className='submit-contact'>SUBMIT</button>
+          <Link className='submit-contact animation-button-wrapper' ref={submitFormAnimationContainer} role="button" onClick={handleSubmitForm}></Link>
         </Fade>
       </form>
 
