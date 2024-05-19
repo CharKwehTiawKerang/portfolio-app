@@ -5,6 +5,11 @@
     margin: 0.3rem 0.1rem 0rem 0.1rem;
 }
 
+#mail svg {
+    max-width: 50px;
+    height: auto;
+}
+
 .navlink-wrapper a:hover {
     background-color: var(--lightBlue);
     animation: navOpacity 0.4s;

@@ -5,9 +5,11 @@ import Lottie from 'lottie-web'
 
 import Image from '../assets/raya-outfit-2024.jpg'
 import Hireme from '../animations/hire-me.json'
+import Resume from '../animations/resume.json'
 
 const Home = () => {
   const hiremeAnimationContainer = useRef();
+  const resumeAnimationContainer = useRef();
 
   useEffect(() => {
     const hiremeAnimation = Lottie.loadAnimation({
@@ -15,8 +17,14 @@ const Home = () => {
       animationData: Hireme
     })
 
+    const resumeAnimation = Lottie.loadAnimation({
+      container: resumeAnimationContainer.current,
+      animationData: Resume
+    })
+
     return () => {
       hiremeAnimation.destroy();
+      resumeAnimation.destroy();
     }
   }, [])
 
@@ -35,7 +43,7 @@ const Home = () => {
                 </div>
 
                 <div className='download-btn-wrapper'>
-                    <button className='crystal-box-input'><Link to="/src/assets/resume.pdf" target="_blank" download>R E S U M E</Link></button>
+                    <Link to="/src/assets/resume.pdf" className='animation-button-wrapper' ref={resumeAnimationContainer} target="_blank" download></Link>
                     <Link to='/contact' className='animation-button-wrapper' ref={hiremeAnimationContainer}></Link>
                 </div>
               </div>

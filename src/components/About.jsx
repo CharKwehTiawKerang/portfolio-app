@@ -2,6 +2,9 @@ import React from 'react'
 import { Rotate } from 'react-reveal';
 
 import comingsoon from '../assets/comingsoon.png'
+import radarOne from '../assets/radarone.svg'
+import radarTwo from '../assets/radartwo.svg'
+import radarThree from '../assets/radarthree.svg'
 
 const About = () => {
   return (
@@ -17,6 +20,20 @@ const About = () => {
 
         <div className="stats-wrapper">
           <p className='stats-title'>Stats</p>
+
+          <div className="radar-wrapper">
+            <span className='about-image-container'>
+              <img src={radarOne} />
+            </span>
+
+            <span className='about-image-container'>
+              <img src={radarTwo} />
+            </span>
+
+            <span className='about-image-container'>
+              <img src={radarThree} />
+            </span>
+          </div>
         </div>
         
         {/* <div className="achievements-wrapper">
