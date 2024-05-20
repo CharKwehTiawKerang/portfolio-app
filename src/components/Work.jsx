@@ -1,7 +1,5 @@
 import React from 'react'
-import Rotate from 'react-reveal/Rotate';
 
-import comingsoon from '../assets/comingsoon.png'
 import nodejs from '../assets/frameworks-libraries/nodejs.svg'
 import npm from '../assets/frameworks-libraries/npm.svg'
 import express from '../assets/frameworks-libraries/express-color.svg'

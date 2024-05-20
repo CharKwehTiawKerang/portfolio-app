@@ -98,31 +98,6 @@
   margin-bottom: 2rem;
 }
 
-/* .navbar-wrapper{
-  width: 100vw;
-  display: flex;
-  padding: 2rem 0;
-  justify-content: center;
-  align-items: center;
-}
-
-.navbar-wrapper div{
-  margin: 0 auto;
-}
-
-.navlink-wrapper{
-  display: flex;
-}
-
-.navlink-wrapper a{
-  color: white;
-  font-size: 18px;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin: 0 1.6rem;
-} */
-
-
 .home-wrapper {
   width: 100vw;
   padding: 4rem;
@@ -242,10 +217,16 @@ span.work-image-container img {
 
 .radar-wrapper {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.about-image-container img {
-  width: 500px;
+.about-image-container {
+  font-family: 'Bowlby One SC';
+  width: 450px;
+  margin-right: 22px;
+  margin-left: 22px;
 }
 
 .photography {
@@ -333,12 +314,6 @@ label span {
   color: rgb(255, 63, 63);
 }
 
-div.ant-form-item-explain-error {
-  font-size: 16px;
-  margin-top: 0em !important;
-  margin-bottom: 1em !important;
-}
-
 div.ant-form-item-control-input-content input.ant-input, textarea#message, .form-contact input, textarea {
   color: #ffffff !important;
   background-color: var(--bgPrimary) !important;
@@ -407,21 +382,6 @@ a.submit-contact svg {
   width: 24px;
   height: auto;
 }
-
-/* #phone {
-  color: #797979;
-  text-decoration: none;
-}
-
-#gmail {
-  color: var(--purple);
-  text-decoration: none;
-}
-
-#googlemaps {
-  color: var(--cyan);
-  text-decoration: none;
-} */
 
 #whatsapp {
   color: #25D366;

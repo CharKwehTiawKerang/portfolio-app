@@ -1,7 +1,6 @@
 import React, { useEffect, createRef } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import Fade from 'react-reveal/Fade';
-
 import Lottie from 'lottie-web'
 
 import Logo from '../animations/logo.json'
