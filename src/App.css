@@ -189,15 +189,25 @@
 }
 
 .work-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   padding-top: 1em;
   padding-bottom: 1em;
   padding-left: 2em;
   padding-right: 2em;
 }
 
-span.work-image-container img {
-  width: 150px;
+div.work-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 32px;
+}
+
+div.work-image-container img {
+  width: 150px;
+  height: 150px;
 }
 
 /* =================================== ABOUT =================================== */

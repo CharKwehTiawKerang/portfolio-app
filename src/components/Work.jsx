@@ -38,33 +38,40 @@ const Work = () => {
           <p className='frameworks-title'>Frameworks <span className='crystal'>&</span> Libraries</p>
 
           <div className="work-container">
-            <span className='work-image-container'>
+            <div className='work-image-container'>
               <img src={nodejs} />
-            </span>
+              <p>Node JS</p>
+            </div>
 
-            <span className='work-image-container'>
+            <div className='work-image-container'>
               <img src={npm} />
-            </span>
+              <p>NPM</p>
+            </div>
 
-            <span className='work-image-container'>
+            <div className='work-image-container'>
               <img src={express} />
-            </span>
+              <p>Express JS</p>
+            </div>
 
-            <span className='work-image-container'>
+            <div className='work-image-container'>
               <img src={bootstrap} />
-            </span>
+              <p>Bootstrap</p>
+            </div>
 
-            <span className='work-image-container'>
+            <div className='work-image-container'>
               <img src={laravel} />
-            </span>
+              <p>Laravel</p>
+            </div>
 
-            <span className='work-image-container'>
+            <div className='work-image-container'>
               <img src={reactjs} />
-            </span>
+              <p>React JS</p>
+            </div>
 
-            <span className='work-image-container'>
+            <div className='work-image-container'>
               <img src={jupyter} />
-            </span>
+              <p>Jupyter</p>
+            </div>
           </div>
         </div>
 
@@ -72,41 +79,50 @@ const Work = () => {
           <p className='tools-title'>Tools</p>
 
           <div className="work-container">
-            <span className='work-image-container'>
+            <div className='work-image-container'>
               <img src={vite} />
-            </span>
+              <p>Vite</p>
+            </div>
 
-            <span className='work-image-container'>
+            <div className='work-image-container'>
               <img src={postman} />
-            </span>
+              <p>Postman</p>
+            </div>
 
-            <span className='work-image-container'>
+            <div className='work-image-container'>
               <img src={dbeaver} />
-            </span>
+              <p>Dbeaver</p>
+            </div>
 
-            <span className='work-image-container'>
+            <div className='work-image-container'>
               <img src={git} />
-            </span>
+              <p>Git</p>
+            </div>
 
-            <span className='work-image-container'>
+            <div className='work-image-container'>
               <img src={github} />
-            </span>
+              <p>GitHub</p>
+            </div>
 
-            <span className='work-image-container'>
+            <div className='work-image-container'>
               <img src={adobeillustrator} />
-            </span>
+              <p>Adobe Illustrator</p>
+            </div>
 
-            <span className='work-image-container'>
+            <div className='work-image-container'>
               <img src={adobephotoshop} />
-            </span>
+              <p>Adobe Photoshop</p>
+            </div>
 
-            <span className='work-image-container'>
+            <div className='work-image-container'>
               <img src={adobeaftereffects} />
-            </span>
+              <p>Adobe After Effects</p>
+            </div>
 
-            <span className='work-image-container'>
+            <div className='work-image-container'>
               <img src={figma} />
-            </span>
+              <p>Figma</p>
+            </div>
           </div>
         </div>
 
