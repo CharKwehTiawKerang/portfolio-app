@@ -188,6 +188,29 @@
   border-image-source: linear-gradient(to bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #52cffe, #46eefa, #5ffbf1);
 }
 
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid var(--bgPrimary);
+  margin: 16px 8px;
+}
+
+.card, .card a img {
+  max-width: 300px;
+  background-color: var(--bgPrimary);
+}
+
+.card .card-desc {
+  background-color: var(--bgPrimary);
+  padding: 0 8px 8px 8px;
+  margin-top: auto;
+}
+
 .work-container {
   display: flex;
   align-items: center;
@@ -306,11 +329,17 @@ form.ant-form, .form-contact {
   height: auto !important;
   overflow: hidden !important;
   display: flex !important;
+  align-items: stretch;
   flex-direction: column;
   margin: auto !important;
   margin-top: 0.6em !important;
   margin-bottom: 2em !important;
   padding-bottom: 0.5em !important;
+}
+
+.form-contact a.submit-contact {
+  display: block;
+  margin: 0 auto;
 }
 
 label.ant-form-item-required, label {

@@ -1,4 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
+import projectOne from '../assets/project-one.jpg'
+import projectTwo from '../assets/project-two.jpg'
+import projectThree from '../assets/project-three.jpg'
+import projectFour from '../assets/project-four.jpg'
 
 import nodejs from '../assets/frameworks-libraries/nodejs.svg'
 import npm from '../assets/frameworks-libraries/npm.svg'
@@ -31,7 +37,44 @@ const Work = () => {
         <div className="projects-title-sub-wrapper">
           <p className='projects-title-sub'>Projects</p>
 
+          <div className="card-wrapper">
+            <div className='card'>
+              <Link to='https://www.google.com' target='_blank'>
+                <img src={projectOne} alt="" />
+              </Link>
+              <div className='card-desc'>
+                <p>An image gallery app made with React JS using Unsplash API.</p>
+              </div>
+            </div>
 
+            <div className='card'>
+              <Link to='https://hikmah.harizasyraf.com/advices' target='_blank'>
+                <img src={projectTwo} alt="" />
+              </Link>
+              <div className='card-desc'>
+                <p>Collection of Islamic advices API made using NodeJS and ExpressJS</p>
+              </div>
+            </div>
+
+            <div className='card'>
+              <Link to='https://www.google.com' target='_blank'>
+                <img src={projectThree} alt="" />
+              </Link>
+              <div className='card-desc'>
+                <p>Ecommerce project: Laravel, InertiaJS, ReactJS and MySQL.</p>
+              </div>
+            </div>
+
+            <div className='card'>
+              <Link to='https://www.google.com' target='_blank'>
+                <img src={projectFour} alt="" />
+              </Link>
+              <div className='card-desc'>
+                <p>A simple Islamic advices generator apps.</p>
+              </div>
+            </div>
+
+          </div>
         </div>
 
         <div className="frameworks-wrapper">

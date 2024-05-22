@@ -35,6 +35,11 @@ span.heart:hover {
     max-width: 200px !important;
 }
 
+/* =================================== WORK  =================================== */
+.card:hover {
+    box-shadow: 2px 2px 24px #5f5f5f;
+}
+
 /* =================================== CONTACT  =================================== */
 #whatsapp:hover {
     color: #25D366;
