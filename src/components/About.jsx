@@ -13,7 +13,7 @@ const About = () => {
           <p className='profile-title'>Profile <span className='crystal'>&</span> Interest</p>
         </div>
 
-        <div className="stats-wrapper">
+        {/* <div className="stats-wrapper">
           <p className='stats-title'>Stats</p>
 
           <div className="radar-wrapper">
@@ -29,7 +29,7 @@ const About = () => {
               <img src={radarThree} />
             </span>
           </div>
-        </div>
+        </div> */}
         
         {/* <div className="achievements-wrapper">
           <p className='achievements-title'>Achievements</p>

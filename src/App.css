@@ -233,6 +233,16 @@ div.work-image-container img {
   height: 150px;
 }
 
+.notes {
+  text-align: center;
+  font-size: 1.2em;
+  color: var(--cyan);
+}
+
+.notes a {
+  color: #ffffff;
+}
+
 /* =================================== ABOUT =================================== */
 .projects-title-sub-wrapper, .frameworks-wrapper, .tools-wrapper, .stats-wrapper, .interest-wrapper {
   display: flex;

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import projectOne from '../assets/project-one.jpg'
 import projectTwo from '../assets/project-two.jpg'
-import projectThree from '../assets/project-three.jpg'
+import projectThree from '../assets/project-three-comingsoon.jpg'
 import projectFour from '../assets/project-four.jpg'
 
 import nodejs from '../assets/frameworks-libraries/nodejs.svg'
@@ -39,7 +39,7 @@ const Work = () => {
 
           <div className="card-wrapper">
             <div className='card'>
-              <Link to='https://www.google.com' target='_blank'>
+              <Link to='https://hall-of-lens.onrender.com/' target='_blank'>
                 <img src={projectOne} alt="" />
               </Link>
               <div className='card-desc'>
@@ -52,21 +52,12 @@ const Work = () => {
                 <img src={projectTwo} alt="" />
               </Link>
               <div className='card-desc'>
-                <p>Collection of Islamic advices API made using NodeJS and ExpressJS</p>
+                <p>Collection of Islamic advices API made using NodeJS and ExpressJS.</p>
               </div>
             </div>
 
             <div className='card'>
-              <Link to='https://www.google.com' target='_blank'>
-                <img src={projectThree} alt="" />
-              </Link>
-              <div className='card-desc'>
-                <p>Ecommerce project: Laravel, InertiaJS, ReactJS and MySQL.</p>
-              </div>
-            </div>
-
-            <div className='card'>
-              <Link to='https://www.google.com' target='_blank'>
+              <Link to='https://al-hikmah.onrender.com/' target='_blank'>
                 <img src={projectFour} alt="" />
               </Link>
               <div className='card-desc'>
@@ -74,7 +65,17 @@ const Work = () => {
               </div>
             </div>
 
+            <div className='card'>
+              <Link to='' target='_blank' onClick={e => e.preventDefault()}>
+                <img src={projectThree} alt="" />
+              </Link>
+              <div className='card-desc'>
+                <p>Ecommerce project: Laravel, InertiaJS, ReactJS and MySQL.</p>
+              </div>
+            </div>
           </div>
+
+          <p className='notes'>More projects on my <Link to='https://github.com/CharKwehTiawKerang?tab=repositories' target='_blank'>GitHub!</Link></p>
         </div>
 
         <div className="frameworks-wrapper">
