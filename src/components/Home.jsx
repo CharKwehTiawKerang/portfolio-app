@@ -43,7 +43,7 @@ const Home = () => {
                 </div>
 
                 <div className='download-btn-wrapper'>
-                    <Link to="/src/assets/resume.pdf" className='animation-button-wrapper' ref={resumeAnimationContainer} target="_blank"></Link>
+                    <Link to="https://assets.harizasyraf.com/images/resume.pdf" className='animation-button-wrapper' ref={resumeAnimationContainer} target="_blank"></Link>
                     <Link to='/contact' className='animation-button-wrapper' ref={hiremeAnimationContainer}></Link>
                 </div>
               </div>
