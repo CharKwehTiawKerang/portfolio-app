@@ -1,0 +1,57 @@
+/* =================================== NAVBAR =================================== */
+@media only screen and (max-width: 768px) {
+    .navbar-wrapper {
+        display: none;
+    }
+
+}
+
+/* =================================== HOME =================================== */
+@media only screen and (max-width: 768px) {
+    .home-wrapper {
+        padding: 0;
+    }
+
+    .main-image {
+        width: 200px;
+        margin: 1rem auto;
+    }
+
+    .hero-section-wrapper div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .hero-title, .download-btn-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 0;
+        font-size: 32px;
+        margin: 16px auto;
+    }
+
+}
+
+
+
+
+
+
+@media only screen and (min-width: 365px) {
+    .test {
+        display: block;
+    }
+}
+
+@media only screen and (min-wdith: 480px) and (max-width: 1024px) {
+    .test {
+        display: block;
+    }
+}
+
+/* Desktop width > 1366px > 1920px
+Tablet width > 768px > 1024px
+Mobile width > 360px > 412px
+
+SMALL SCREEN MIN MAX WIDTH 480px */

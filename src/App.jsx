@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import  { Navbar, Home, Work, About, Contact } from './components'
 import './App.css'
 import './animation.css'
+import './responsive.css'
 
 function App() {
   return (
