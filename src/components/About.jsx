@@ -6,6 +6,7 @@ import radarTwo from '../assets/radartwo.svg'
 import radarThree from '../assets/radarthree.svg'
 
 const About = () => {
+
   return (
     <>
       <div className="about-wrapper">

@@ -51,7 +51,7 @@ const Home = () => {
           </div>
 
           <Fade bottom delay={600}>
-            <p className="hero-description-title">W E B <span className='crystal spinning-crystal'>✦</span> D E V E L O P E R <span className='crystal'>┊┊</span> P H O T O G R A P H E R</p>
+            <p className="hero-description-title">W E B <span className='crystal'>✦</span> D E V E L O P E R <span className='crystal'>┊┊</span> P H O T O G R A P H E R</p>
           </Fade>
 
           <Fade bottom delay={600}>

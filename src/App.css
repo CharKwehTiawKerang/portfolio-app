@@ -335,16 +335,16 @@ div.rotate-left {
 }
 
 form.ant-form, .form-contact {
-  width: 40vw !important;
-  height: auto !important;
+  width: 40vw;
+  height: auto;
   overflow: hidden !important;
-  display: flex !important;
+  display: flex;
   align-items: stretch;
   flex-direction: column;
-  margin: auto !important;
-  margin-top: 0.6em !important;
-  margin-bottom: 2em !important;
-  padding-bottom: 0.5em !important;
+  margin: auto;
+  margin-top: 0.6em;
+  margin-bottom: 2em;
+  padding-bottom: 0.5em;
 }
 
 .form-contact a.submit-contact {

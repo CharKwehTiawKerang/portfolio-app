@@ -1,15 +1,54 @@
 /* =================================== NAVBAR =================================== */
-@media only screen and (max-width: 768px) {
+.button-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.burger-menu {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* @media only screen and (max-width: 768px) { */
+@media only screen and (max-width: 934px) {
     .navbar-wrapper {
         display: none;
     }
 
+    .show-menu {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background-color: var(--darkBlue);
+        flex-direction: column;
+        justify-content: flex-end;
+        flex: 0.2;
+        padding: 1rem 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+    }
 }
 
-/* =================================== HOME =================================== */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1109px) {
+    .logo {
+        max-width: 350px;
+    }
+}
+
+
+/* =================================== MOBILE SCREEN =================================== */
+@media only screen and (max-width: 767px) {
     .home-wrapper {
         padding: 0;
+        margin: 0;
     }
 
     .main-image {
@@ -20,6 +59,7 @@
     .hero-section-wrapper div {
         display: flex;
         flex-wrap: wrap;
+        margin: auto;
     }
 
     .hero-title, .download-btn-wrapper {
@@ -31,27 +71,129 @@
         margin: 16px auto;
     }
 
-}
+    .subhero-section-wrapper {
+        gap: 2em;
+    }
 
+    .download-btn-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+    }
+    
+    .hero-description-title, .hero-description {
+        font-size: 18px;
+    }
 
+    .hero-description-title {
+        width: 100%;
+        margin: 2rem 0;
+        line-height: 2.1rem;
+    }
 
+    .hero-description {
+        max-width: 100%;
+        padding: 0;
+    }
 
+    .polaroid-row {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .polaroid {
+        margin-bottom: 1rem;
+    }
 
-@media only screen and (min-width: 365px) {
-    .test {
-        display: block;
+    div.no-rotate {
+        float: none;
+    }
+    
+    div.rotate-right {
+        float: none;
+        transform: none;
+    }
+    
+    div.rotate-left {
+        float: none;
+        transform: none;
+    }
+
+    .translate--2 {
+        translate: none;
+    }
+    
+    p.contact-subtitle {
+        width: 100%;
+        font-size: 20px;
+        padding: 0;
+        margin: 0 auto 16px auto;
+    }
+
+    form.form-contact {
+        width: 100%;
+        padding: 0;
+        margin: 0 auto 32px auto;
+    }
+
+    .get-in-touch-wrapper {
+        flex-wrap: wrap;
     }
 }
 
-@media only screen and (min-wdith: 480px) and (max-width: 1024px) {
-    .test {
-        display: block;
+/* =================================== TABLET SCREEN =================================== */
+/* @media only screen and (min-width: 768px) and (max-width: 934px) { } */
+/* @media only screen and (min-width: 935px) and (max-width: 1110px) { } */
+
+@media only screen and (min-width: 768px) and (max-width: 1110px) {
+    .main-image {
+        width: 200px;
+        margin: auto;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .download-btn-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hero-description-title, .hero-description {
+        font-size: 18px;
+    }
+
+    .polaroid-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .polaroid {
+        margin-bottom: 1rem;
+    }
+
+    div.no-rotate {
+        float: none;
+    }
+    
+    div.rotate-right {
+        float: none;
+        transform: none;
+    }
+    
+    div.rotate-left {
+        float: none;
+        transform: none;
+    }
+
+    .translate--2 {
+        translate: none;
     }
 }
 
-/* Desktop width > 1366px > 1920px
+/* 
+Desktop width > 1366px > 1920px
 Tablet width > 768px > 1024px
 Mobile width > 360px > 412px
-
-SMALL SCREEN MIN MAX WIDTH 480px */
+*/

@@ -1,4 +1,4 @@
-import React, { useEffect, createRef } from 'react'
+import React, { useEffect, createRef, useState} from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import Fade from 'react-reveal/Fade';
 import Lottie from 'lottie-web'
@@ -12,6 +12,23 @@ import Bulb from '../animations/bulb.json'
 const Navbar = () => {
   //create ref
   let logoAnimationContainer = createRef()
+  const [onMenu, setOnMenu] = useState(false)
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  const showMenu = (e) => {
+    e.preventDefault();
+
+    if(onMenu == false) {
+      setOnMenu(true);
+    } else if(onMenu == true) {
+      setOnMenu(false);
+    }
+    console.log(windowWidth)
+  }
+
+  const handleResize = () => {
+    setWindowWidth(window.innerWidth)
+  }
 
   useEffect(() => {
     //create var
@@ -109,7 +126,7 @@ const Navbar = () => {
     //   if(bulbAnimation.complete())
     //     bulbAnimation.pause();
     // });
-
+    window.addEventListener('resize', handleResize);
 
     //return function
     return () => {
@@ -119,39 +136,56 @@ const Navbar = () => {
       gearAnimation.destroy()
       hourglassAnimation.destroy()
       bulbAnimation.destroy()
+
+      window.removeEventListener('resize', handleResize);
     }
   }, [])
   
 
   return (
-    <Fade left>
-    <div className='navbar-wrapper'>
-        <div className='logo-wrapper'>
-          <Link to='/'>
-            <div className='logo' ref={logoAnimationContainer}/>
-          </Link>
-        </div>
-        <div className="navlink-wrapper">
-          <Fade left delay={200}>
-            <NavLink to='/' id='home-hover-animation'><span className='animation-icon-wrapper' id='home'></span>Home</NavLink>
-          </Fade>
-          <Fade left delay={400}>
-            <NavLink to='/work' id='gear-hover-animation'><span className='animation-icon-wrapper' id='gear'></span>Work</NavLink>
-          </Fade>
-          <Fade left delay={600}>
-            <NavLink to='/about' id='hourglass-hover-animation'><span className='animation-icon-wrapper' id='hourglass'></span>About</NavLink>
-          </Fade>
-          <Fade left delay={800}>
-            <NavLink to='/contact' id='bulb-hover-animation'><span className='animation-icon-wrapper' id='bulb'></span>Contact</NavLink>
-          </Fade>
-        </div>
+    <>
+      <Fade left>
+        <div className={ onMenu ? 'show-menu' : 'navbar-wrapper'}>
+            <div className='logo-wrapper'>
+              <Link to='/' onClick={() => setOnMenu(false)}>
+                <div className='logo' ref={logoAnimationContainer}/>
+              </Link> 
+              { onMenu && (
+              <div className='button-close' onClick={() => setOnMenu(false)}>
+                X
+              </div>)}
+            </div>
+            <div className="navlink-wrapper">
+              <Fade left delay={200}>
+                <NavLink to='/' id='home-hover-animation' onClick={() => setOnMenu(false)}><span className='animation-icon-wrapper' id='home'></span>Home</NavLink>
+              </Fade>
+              <Fade left delay={400}>
+                <NavLink to='/work' id='gear-hover-animation' onClick={() => setOnMenu(false)}><span className='animation-icon-wrapper' id='gear'></span>Work</NavLink>
+              </Fade>
+              <Fade left delay={600}>
+                <NavLink to='/about' id='hourglass-hover-animation' onClick={() => setOnMenu(false)}><span className='animation-icon-wrapper' id='hourglass'></span>About</NavLink>
+              </Fade>
+              <Fade left delay={800}>
+                <NavLink to='/contact' id='bulb-hover-animation' onClick={() => setOnMenu(false)}><span className='animation-icon-wrapper' id='bulb'></span>Contact</NavLink>
+              </Fade>
+            </div>
 
-        <div className='footer-wrapper'>
-          <p>Made with <span className='heart'>💖</span>.</p>
-          <p>Designed by Hariz Asyraf ㇐ 2024.</p>
+            <div className='footer-wrapper'>
+              <p>Made with <span className='heart'>💖</span>.</p>
+              <p>Designed by Hariz Asyraf ㇐ 2024.</p>
+            </div>
         </div>
-    </div>
-    </Fade>
+      </Fade>
+
+      { windowWidth < 934 && (
+        <div className='burger-menu' onClick={showMenu}>
+          &#9776;
+        </div>
+        )
+      }
+
+        
+    </>
   )
 }
 
